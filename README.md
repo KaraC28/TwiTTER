@@ -24,6 +24,8 @@ AWS Services: IAM, S3, DynamoDB
 ![Image](https://github.com/user-attachments/assets/9f268d2f-5f43-4b93-ac8a-5189525d57f4) 
 
 ![Image](https://github.com/user-attachments/assets/0bbe3127-bdb3-4d5b-ba71-eaf91b92be09) 
+
+![Image](https://github.com/user-attachments/assets/0233c94b-e5b1-4613-8577-469005c475c3)
 # Known Issues
 - Request bug for uploading image
 - Stored pfp doesn't appear in profile page
