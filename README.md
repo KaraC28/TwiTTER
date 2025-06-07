@@ -15,6 +15,14 @@ AWS Services: IAM, S3, DynamoDB
 - Clicking on a user's username will take the user to the other user's page, but will not allow the user to edit or change the pfp of the ohter user
 - Clicking on the logout link will logout the user and take them to the home page, which displays a login link and signup link
 # Images
+![Image](https://github.com/user-attachments/assets/1a00a282-837f-4862-a257-c0654a2c1f3b) 
+
+![Image](https://github.com/user-attachments/assets/1fab384e-8862-4af9-bfd1-7d3e7d594436)
+
+![Image](https://github.com/user-attachments/assets/a1434c92-3046-4617-bd55-c781723c26b8)
+
+![Image](https://github.com/user-attachments/assets/9f268d2f-5f43-4b93-ac8a-5189525d57f4) 
+
 ![Image](https://github.com/user-attachments/assets/0bbe3127-bdb3-4d5b-ba71-eaf91b92be09) 
 # Known Issues
 - Request bug for uploading image
