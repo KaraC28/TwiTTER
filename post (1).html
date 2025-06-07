@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Post View</title>
+        <link rel= "stylesheet" href= "/static/styles.css">
+    </head>
+    <body>
+        <div id= "postContainer"></div>
+            <!--Orignal post loads here-->
+        </div>
+        <div id= "repliesContainer"></div>
+            <!--replies load here-->
+        </div>
+        <div id="replyForm">
+            <input type="text" id="replyInput" placeholder="Write a reply...">
+            <button onclick="reply()">Reply</button>
+        </div>
+        <a href = '/feed.html'>Go back to feed</a>
+    </body>
+    <script src="/static/script.js"></script>
+    <script>
+        post_view()
+    </script>
+</html>

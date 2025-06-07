@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "/static/styles.css"/>
+        <title>Profile</title>
+    </head>
+    <body>
+
+        <h1 class = "topUsername"> {{profile_username}}'s Profile </h1>
+        <div id = "profile">
+            <div id = "profilePic"></div>
+            <b>{{profile_username}}</b>
+        </div> <!-- profile based on who's logged in -->
+        {% if session_username == profile_username %} <!-- condition that shows upload pfp and add post only to user looking at their own profile -->
+            <div>
+            <input type = "file" id = "chooseFile"/> <br/>
+            <button onclick='uploadPfp();'> Update profile pic </button>
+            </div>
+            <div>
+            <input type = 'text' id = 'userPost'/><br/>
+            <button onclick='newPost();'> New Post </button>
+            </div>
+        {% endif %}
+
+        <div id = "listProfilePosts"></div>
+
+        <a href="/feed.html">Feed</a>
+        <a href = "/logout.html">Logout</a>
+
+
+        <script>
+        let session_username = "{{session_username}}";
+        let profile_username = "{{profile_username}}";
+        let session_user_id = "{{TUserID}}";
+        let profile_pfpID = "{{profile_pfpID}}";
+
+        console.log(session_username + " is logged in");
+        </script> <!--gonna figure this out-->
+
+        <script src = "/static/script.js"></script>
+        <script>
+        showPfp(profile_pfpID);
+        listProfilePosts(profile_username);
+        </script>
+        <!-- <script>
+            if (session_username == profile_username){
+                temp = "<div id = 'profilePic'>";
+                //put pfp here
+                temp = "</div>";
+                //temp = "uploadPfp(session_user_id);" add back in later
+                temp = "<b>" + session_username + "</b>" + "<br/>";
+                temp = "<input type = 'text' id = 'userPost'/>" + "<br/>";
+                temp = "<button onclick='newPost();'> New Post </button>";
+            }
+            else{
+                temp = "<div id = 'profilePic'>";
+                //put pfp here
+                temp = "</div>";
+                temp = "<b>" + profile_username + "</b>" + "<br/>";
+            }
+            let profile = document.getElementById("profile");
+            profile.innerHTML = temp;
+
+        </script> -->
+    </body>
+</html>
