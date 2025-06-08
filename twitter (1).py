@@ -9,13 +9,13 @@ from boto3.dynamodb.conditions import Key
 from boto3.dynamodb.conditions import Attr #to help with scanning the table as we are searching by email instead of UserID
 
 #code for the S3 bucket and Dynamo
-#AWSKEY = 'AKIAQUFLQBDS3N7KO6FB'
-#AWSSECRET = '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'
+#AWSKEY = ''
+#AWSSECRET = ''
 #PUBLIC_BUCKET = 'twitter-public-bucket'
 #STORAGE_URL = 'https://s3.amazonaws.com/' + PUBLIC_BUCKET + '/'
 
-AWSKEY = 'AKIAZPPF776CNURBMRH3'
-AWSSECRET = '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'
+AWSKEY = ''
+AWSSECRET =''
 PUBLIC_BUCKET = 'nstewart-web-public'
 STORAGE_URL = 'https://s3.amazonaws.com/' + PUBLIC_BUCKET + '/'
 
